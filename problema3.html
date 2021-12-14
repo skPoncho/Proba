@@ -7,7 +7,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  
+
   </head>
   <body>
     <div class="container-fluid">
@@ -18,7 +18,46 @@
       </div>
       <div class="row text-start">
         <a href="index.html"> <i class="bi bi-arrow-left-circle-fill"></i> Regresar al inicio </a>
+      </div><br>
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3 " >
+          <img src="img/perm.jpg" class="card-img-top" alt="..."class="img-fluid" id="perm" style="display: none;">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 " >
+          <img src="img/boton_perm.jpg" class="card-img-top" alt="..."class="img-fluid" style="cursor: pointer" onclick="muestraperm()">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 " >
+          <img src="img/comb.jpg" class="card-img-top" alt="..."class="img-fluid" id="comb" style="display: none;">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 " >
+          <img src="img/boton_comb.jpg" class="card-img-top" alt="..."class="img-fluid" style="cursor: pointer" onclick="muestracomb()">
+        </div>
+
+
+      </div><br><br>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" id="operaciones" style="display: none;">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <label for="n" class="form-label "> Valor <b>n</b> :</label>  <input type="text" class="form-control " name="n" id="n" value="">
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <label for="r" class="form-label "> Valor <b>r</b> :</label>  <input type="text" class="form-control " name="r" id="r" value="">
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <h2>Resultado : <span id="resultado"> 0 </span></h2>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <button type="button" class="btn btn-primary">Calcular</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="js/permutaciones_combinaciones.js" type="text/javascript"></script>
+
+
 </html>
