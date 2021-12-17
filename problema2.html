@@ -31,7 +31,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-4 "></div>
             <div class=" col-md-4 col-sm-4 "><label for="favorables" class="form-label">Numero de casos favorables :</label>  <input type="text" class="form-control" name="favorables" id="favorables" value=""></div>
-            <div class=" col-md-4 col-sm-4 "><center> <h2>P(a) =  <span> 0 </span> </h2></center></div>
+            <div class=" col-md-4 col-sm-4 "><center> <h2>P(A) =  <span id="resultado"> 0 </span> </h2></center></div>
           </div><br>
           <div class="row">
             <div class="col-md-4 col-sm-4 "></div>
@@ -40,7 +40,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-4"></div>
             <div class="col-md-4 col-sm-4 col-xs-4">
-              <button type="button" class="btn btn-primary">Calcular</button>
+              <button type="button" class="btn btn-primary" onclick="calcula()">Calcular</button>
             </div>
           </div>
         </div>
@@ -48,4 +48,5 @@
       </div>
     </div>
   </body>
+  <script src="js/probabilidad.js" type="text/javascript"></script>
 </html>
