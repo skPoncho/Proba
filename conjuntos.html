@@ -10,15 +10,22 @@
 <body>
     <header></header>
     <main>
-        <div id="parentesisAbre">(</div>
-        <div id="parentesisCierra">)</div>
-        <div id="union"><img src="img/union.png"></div>
-        <div id="interseccion"><img src="img/interseccion.png"></div>
-        <div id="complemento"><img src="img/complemento.png"></div>
-        <div id="universo"><img src="img/universo.png"></div>
-        <div id="vacio"><img src="img/vacio.png"></div>
-        <button id="agregarConjunto">agregar conjunto</button>
-        <button>calcular</button>
+        <div id="caja">
+            <section id="menu">
+                <button id="union"><img src="img/union.png"></button>
+                <button id="interseccion"><img src="img/interseccion.png"></button>
+                <button id="subconjunto"><img src="img/complemento.png"></button>
+                <!--<button id="vacio"><img src="img/vacio.png"></button>
+                <button id="complemento">¬</button>
+                <div id="universo"><img src="img/universo.png">={<p></p>}</div>-->
+            </section>
+        </div>
+        <section id="footer">
+            <button id="calcula">calcular</button>
+            <button id="agregar">agregar conjunto</button>
+            <button id="limpia">limpia pantalla</button>
+            <button id="borra">borrar</button>
+        </section>
     </main>
     <script src="js/conjuntos.js" type="text/javascript"></script>
 </body>
