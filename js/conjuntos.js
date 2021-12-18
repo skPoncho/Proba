@@ -18,7 +18,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
 
     for(h=0; h<12; h++)
         botones.childNodes[h].addEventListener("click", mostrarOperacion);
-    
+
     setTimeout(function (){
         do
         {
@@ -39,7 +39,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
             }
         }while(ingresa != "");
     }, 10);
-    
+
     function limpiaPantalla()
     {
         while(pantalla.childNodes.length>0)
@@ -91,7 +91,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
                     {
                         pantalla.insertBefore(cloneUni, pantalla.childNodes[a+1]);
                         pantalla.removeChild(pantalla.childNodes[a]);
-                        pantalla.removeChild(pantalla.childNodes[a-1]); 
+                        pantalla.removeChild(pantalla.childNodes[a-1]);
                         a-=1;
                     }
                 }
@@ -109,7 +109,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
                     {
                         pantalla.insertBefore(cloneUni, pantalla.childNodes[a]);
                         pantalla.removeChild(pantalla.childNodes[a-1]);
-                        pantalla.removeChild(pantalla.childNodes[a+1]); 
+                        pantalla.removeChild(pantalla.childNodes[a+1]);
                         a-=1;
                     }
                 }
@@ -174,7 +174,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
                                 else
                                     evaluaSub = false;
                     else
-                        evaluaSub = false;      
+                        evaluaSub = false;
                     if(evaluaSub)
                         pantalla.childNodes[res-1].childNodes[1].innerText = "ES SUBCONJUNTO";
                     else
@@ -184,7 +184,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
                     res -= 1;
                 break;
             }
-                
+
     }
     function mostrarOperacion()
     {
@@ -258,7 +258,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
         var boleano = true;
         if(textoConjunto.length > 1)
         {
-            var temp = textoConjunto.split(" ").join(""); 
+            var temp = textoConjunto.split(" ").join("");
             if(temp != "")
                 textoConjunto = temp[0].toUpperCase();
             else
@@ -267,7 +267,7 @@ var cargaPagina = document.addEventListener("DOMContentLoaded",()=>{
         if(textoConjunto != "")
         {
             var agregaNodoTexto = document.createTextNode(textoConjunto+"={");
-            var parrafo = document.createElement("p");
+            var parrafo = document.createElement("span");
             parrafo.appendChild(document.createTextNode(""));
             nodoConjunto.appendChild(agregaNodoTexto);
             nodoConjunto.appendChild(parrafo);
